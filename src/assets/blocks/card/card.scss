@@ -1,0 +1,45 @@
+@import '../../globals/theme/variable';
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.35);
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center center;
+}
+
+.card__description {
+  background-color: rgb(var(--accent-color));
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__title {
+  @extend %default-font-style;
+  color: var(--background-color);
+}
+
+.card__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.card__button {
+
+}
+.card__button-delete {
+
+}
+
+.card__button-cloud {
+
+}

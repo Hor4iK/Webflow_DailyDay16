@@ -1,0 +1,19 @@
+.card__button {
+  height: 19px;
+  width: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__button-delete {
+  background-image: url("/shop.svg");
+}
+
+.card__button-cloud {
+  background-image: url("/cloud.svg");
+  width: 31px;
+}
+
+.card__button-settings {
+  background-image: url("/settings.svg");
+}

@@ -1,0 +1,17 @@
+:root {
+  --accent-color: 67, 83, 255;
+  --font-family: 'Roboto';
+  --font-size: 16px;
+  --base-length: 30px;
+  --background-color: #fff;
+  --color: #000;
+}
+
+%default-font-style {
+  color: var(--color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}

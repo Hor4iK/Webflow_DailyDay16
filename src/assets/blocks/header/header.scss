@@ -1,0 +1,18 @@
+$color: var(--accent-color);
+$semitransparent: var(--accent-color) + ', 0.1';
+
+.header {
+  color: rgb(var(--accent-color));
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb($semitransparent);
+}
+
+.header-title {
+  $big-font-size: calc(var(--font-size) + 6px);
+  font-size: $big-font-size;
+  margin-inline-start: 20px;
+}

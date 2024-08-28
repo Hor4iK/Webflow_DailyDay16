@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webflow</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+  <body>
+    <div class="sidebar"><a class="sidebar__logo-link" href="#"><img class="sidebar__logo" src="/webflow.svg" alt="Webflow"></a>
+      <section class="menu menu-actions">
+        <ul class="menu__list">
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="editor.svg">Dashboard</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="group.svg">Clients</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="team.svg">Team</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="analytics.svg">Analytics</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="notifications.svg">Notifications</a></li>
+        </ul>
+      </section>
+      <section class="menu menu-tools">
+        <ul class="menu__list">
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="icon.svg">Showcase</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="blog.svg">Blog</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="chat.svg">Forum</a></li>
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="question.svg">Help Center</a></li>
+        </ul>
+      </section>
+      <section class="menu menu-settings">
+        <ul class="menu__list">
+          <li class="menu__list-item"><a class="menu__list-item__link" href="#"><img class="menu__list-item__link-image" src="settings.svg">Settings</a></li>
+          <li class="menu__list-item">
+            <button class="menu__list-item__link menu__button menu__button-theme-mode" type="button">Dark Mode</button>
+          </li>
+        </ul>
+        <div class="profile"><span class="profile__avatar"></span>
+          <h3 class="profile__name"></h3><a class="profile__sign-link"></a>
+        </div>
+      </section>
+    </div>
+    <main>
+      <header class="header">
+        <h1 class="header-title">Dashboard</h1>
+        <search class="search">
+          <form class="search__form" action="/search" method="get" autocomplete="on" name="search">
+            <input class="search__form-field" type="search" name="search-field" value="Search projects...">
+            <button class="button button-search" type="submit"></button>
+          </form>
+          <button class="button button_add-card" type="button">+NEW PROJECT</button>
+        </search>
+      </header>
+      <div class="content">
+        <ul class="content__list">
+          <li class="content__item card"><img class="card__image" src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&amp;w=1074&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Title">
+            <div class="card__description">
+              <div class="addition">
+                <h2 class="card__title">CET Limo</h2>
+                <div class="card__actions">
+                  <button class="card__button card__button-delete" type="button"></button>
+                  <button class="card__button card__button-cloud" type="button"></button>
+                </div>
+              </div>
+              <div class="settings">
+                <button class="card__button card__button-settings" type="button"></button>
+              </div>
+            </div>
+          </li>
+          <li class="content__item card"><img class="card__image" src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&amp;w=1074&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Title">
+            <div class="card__description">
+              <div class="addition">
+                <h2 class="card__title">CET Limo</h2>
+                <div class="card__actions">
+                  <button class="card__button card__button-delete" type="button"></button>
+                  <button class="card__button card__button-cloud" type="button"></button>
+                </div>
+              </div>
+              <div class="settings">
+                <button class="card__button card__button-settings" type="button"></button>
+              </div>
+            </div>
+          </li>
+          <li class="content__item card"><img class="card__image" src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&amp;w=1074&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Title">
+            <div class="card__description">
+              <div class="addition">
+                <h2 class="card__title">CET Limo</h2>
+                <div class="card__actions">
+                  <button class="card__button card__button-delete" type="button"></button>
+                  <button class="card__button card__button-cloud" type="button"></button>
+                </div>
+              </div>
+              <div class="settings">
+                <button class="card__button card__button-settings" type="button"></button>
+              </div>
+            </div>
+          </li>
+          <li class="content__item card"><img class="card__image" src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&amp;w=1074&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Title">
+            <div class="card__description">
+              <div class="addition">
+                <h2 class="card__title">CET Limo</h2>
+                <div class="card__actions">
+                  <button class="card__button card__button-delete" type="button"></button>
+                  <button class="card__button card__button-cloud" type="button"></button>
+                </div>
+              </div>
+              <div class="settings">
+                <button class="card__button card__button-settings" type="button"></button>
+              </div>
+            </div>
+          </li>
+          <li class="content__item card"><img class="card__image" src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&amp;w=1074&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Title">
+            <div class="card__description">
+              <div class="addition">
+                <h2 class="card__title">CET Limo</h2>
+                <div class="card__actions">
+                  <button class="card__button card__button-delete" type="button"></button>
+                  <button class="card__button card__button-cloud" type="button"></button>
+                </div>
+              </div>
+              <div class="settings">
+                <button class="card__button card__button-settings" type="button"></button>
+              </div>
+            </div>
+          </li>
+          <li class="content__item card"><img class="card__image" src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&amp;w=1074&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Title">
+            <div class="card__description">
+              <div class="addition">
+                <h2 class="card__title">CET Limo</h2>
+                <div class="card__actions">
+                  <button class="card__button card__button-delete" type="button"></button>
+                  <button class="card__button card__button-cloud" type="button"></button>
+                </div>
+              </div>
+              <div class="settings">
+                <button class="card__button card__button-settings" type="button"></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <template id="card-template">
+      <li class="content__item card"><img class="card__image" src="" alt="">
+        <div class="card__description">
+          <div class="addition">
+            <h2 class="card__title"></h2>
+            <div class="card__actions">
+              <button class="card__button card__button-delete" type="button"></button>
+              <button class="card__button card__button-cloud" type="button"></button>
+            </div>
+          </div>
+          <div class="settings">
+            <button class="card__button card__button-settings" type="button"></button>
+          </div>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>

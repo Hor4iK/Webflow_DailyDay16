@@ -1,0 +1,42 @@
+$color: var(--accent-color);
+$semitransparent: var(--accent-color) + ', 0.3';
+
+.menu__list {
+  width: 100%;
+  list-style: none;
+}
+
+.menu__list-item {
+  height: 55px;
+  padding-inline: 20px 10px;
+}
+
+.menu__list-item:hover {
+  background-color: rgb($semitransparent);
+  color: rgb($color);
+}
+
+.menu__list-item:active {
+  background-color: rgb($semitransparent);
+  color: rgb($color);
+}
+
+.menu__list-item:hover .menu-svg {
+  color: rgb($color);
+}
+
+.menu__list-item__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.menu__list-item__link-image {
+  width: 20px;
+  height: 20px;
+}
+
+.menu__list-item__link:hover {
+  text-decoration: none;
+}

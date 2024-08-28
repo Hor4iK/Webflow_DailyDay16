@@ -1,0 +1,27 @@
+.search__form {
+  position: relative;
+}
+
+.button-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  background: url('/src/images/magnifying-glass\ \(1\).svg');
+}
+
+.search__form-field {
+  margin-block: 9px;
+  height: 40px;
+  color: rgba($color: #000, $alpha: 0.4);
+  border-radius: 170px;
+  border: 1px solid rgb(var(--accent-color));
+  padding-inline: 20px 10px;
+}
+
+.search__form-field:focus {
+  outline: none;
+}
+
+.search__form-field:focus-visible {
+  outline: 2.5px solid rgb(var(--accent-color));
+}

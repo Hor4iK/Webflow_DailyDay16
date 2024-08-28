@@ -1,0 +1,122 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Webflow
+    link(rel="stylesheet", href="fonts.css")
+    link(rel="stylesheet", href="bundle.css")
+  body
+    .sidebar
+      a(href="#").sidebar__logo-link
+        img(src="/webflow.svg", alt="Webflow").sidebar__logo
+      section.menu.menu-actions
+        - var listActions = {"Dashboard": "editor.svg", "Clients": "group.svg", "Team": "team.svg", "Analytics": "analytics.svg", "Notifications": "notifications.svg"}
+        ul.menu__list
+          each val, key in listActions
+            li.menu__list-item
+              a.menu__list-item__link(href="#")
+                img.menu__list-item__link-image(src= val)
+                =key
+      section.menu.menu-tools
+        - var listTools = {"Showcase": "icon.svg", "Blog": "blog.svg", "Forum": "chat.svg", "Help Center": "question.svg"}
+        ul.menu__list
+          each val, key in listTools
+            li.menu__list-item
+              a.menu__list-item__link(href="#")
+                img.menu__list-item__link-image(src= val)
+                =key
+      section.menu.menu-settings
+        ul.menu__list
+          li.menu__list-item
+            a.menu__list-item__link(href="#")
+                img.menu__list-item__link-image(src= "settings.svg")
+                ='Settings'
+          li.menu__list-item
+            button(type="button").menu__list-item__link.menu__button.menu__button-theme-mode Dark Mode
+        .profile
+          span.profile__avatar
+          h3.profile__name
+          a.profile__sign-link
+    main
+      header.header
+        h1.header-title Dashboard
+        search.search
+          form.search__form(action="/search", method="get", autocomplete="on", name="search")
+            input.search__form-field(type="search", name="search-field", value="Search projects...")
+            button.button.button-search(type="submit")
+          button(type="button").button.button_add-card +NEW PROJECT
+      .content
+        ul.content__list
+          li.content__item.card
+            img(src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Title").card__image
+            .card__description
+              .addition
+                h2.card__title CET Limo
+                .card__actions
+                  button(type="button").card__button.card__button-delete
+                  button(type="button").card__button.card__button-cloud
+              .settings
+                button(type="button").card__button.card__button-settings
+          li.content__item.card
+            img(src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Title").card__image
+            .card__description
+              .addition
+                h2.card__title CET Limo
+                .card__actions
+                  button(type="button").card__button.card__button-delete
+                  button(type="button").card__button.card__button-cloud
+              .settings
+                button(type="button").card__button.card__button-settings
+          li.content__item.card
+            img(src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Title").card__image
+            .card__description
+              .addition
+                h2.card__title CET Limo
+                .card__actions
+                  button(type="button").card__button.card__button-delete
+                  button(type="button").card__button.card__button-cloud
+              .settings
+                button(type="button").card__button.card__button-settings
+          li.content__item.card
+            img(src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Title").card__image
+            .card__description
+              .addition
+                h2.card__title CET Limo
+                .card__actions
+                  button(type="button").card__button.card__button-delete
+                  button(type="button").card__button.card__button-cloud
+              .settings
+                button(type="button").card__button.card__button-settings
+          li.content__item.card
+            img(src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Title").card__image
+            .card__description
+              .addition
+                h2.card__title CET Limo
+                .card__actions
+                  button(type="button").card__button.card__button-delete
+                  button(type="button").card__button.card__button-cloud
+              .settings
+                button(type="button").card__button.card__button-settings
+          li.content__item.card
+            img(src="https://images.unsplash.com/photo-1539722055918-e992f990c57d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="Title").card__image
+            .card__description
+              .addition
+                h2.card__title CET Limo
+                .card__actions
+                  button(type="button").card__button.card__button-delete
+                  button(type="button").card__button.card__button-cloud
+              .settings
+                button(type="button").card__button.card__button-settings
+    template#card-template
+      li.content__item.card
+        img(src="", alt="").card__image
+        .card__description
+          .addition
+            h2.card__title
+            .card__actions
+              button(type="button").card__button.card__button-delete
+              button(type="button").card__button.card__button-cloud
+          .settings
+            button(type="button").card__button.card__button-settings
+
